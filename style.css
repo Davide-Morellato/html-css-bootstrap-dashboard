@@ -69,6 +69,11 @@ body{
     height: calc(100% - 120px);
 }
 
+.main-content,
+.main-content_body{
+    height: 100%;
+}
+
 .links_list > li:not(:last-child){
     display: none;
 }
