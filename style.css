@@ -1,0 +1,97 @@
+/* Reset Rules */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol, menu{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+img{ 
+    max-width: 100%;
+}
+
+
+/* DEBUG */
+
+*{
+    border: 1px dashed black;
+}
+
+
+
+/* UTILITIES */
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-lightgray{
+    background-color: lightgray;
+}
+
+.bg-cyan{
+    background-color: rgb(27, 114, 232);
+}
+
+.c-orange{
+    color: rgb(255, 143, 0);
+}
+
+.c-white{
+    color: white;
+}
+/* STRUCTURE */
+
+body{
+    font-family: "Raleway", sans-serif;
+}
+
+#web-app{
+    height: 100vh;
+}
+
+#nav-header{
+    background-color: rgb(235, 236, 237);
+}
+
+.mobile_logo{
+    width: 50px;
+}
+
+.links_list > li:not(:last-child){
+    display: none;
+}
+
+.sidebar{
+    background-image: url(./img/sidebar-bg.png);
+    background-size: cover;
+    background-color: rgb(5, 30, 52);
+    width: 70px;
+}   
+
+.sidebar ul > li{
+    line-height: 50px;
+}
+
+
+
+/* MEDIA QUERY */
+
+@media (min-width: 992px){
+    .navbar .container-fluid .links_list > li{
+        display: flex;
+    }
+
+    .sidebar{
+        width: 150px;
+    }
+}
