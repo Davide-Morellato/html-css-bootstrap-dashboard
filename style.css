@@ -42,6 +42,10 @@ img{
     background-color: rgb(27, 114, 232);
 }
 
+.bg-deepblue{
+    background-color: rgb(22, 91, 186);
+}
+
 .c-orange{
     color: rgb(255, 143, 0);
 }
@@ -53,6 +57,7 @@ img{
 
 body{
     font-family: "Raleway", sans-serif;
+    overflow: hidden;
 }
 
 #web-app{
@@ -82,6 +87,10 @@ body{
     line-height: 50px;
 }
 
+.main-content_header{
+    color: white;
+}
+
 
 
 /* MEDIA QUERY */
@@ -93,5 +102,9 @@ body{
 
     .sidebar{
         width: 150px;
+    }
+
+    .main-content_body{
+        overflow-y: scroll;
     }
 }

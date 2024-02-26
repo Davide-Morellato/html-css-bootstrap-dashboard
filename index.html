@@ -12,114 +12,127 @@
         <title>Bootstrap Dashboard</title>
     </head>
     <body>
-        
-        <header id="nav_header">
-            <nav class="navbar">
-                <div class="container-fluid align-items-center gap-2 py-3 fs-4 bg-white">
-                    <a class="mobile_logo col-auto d-lg-none" href="#">
-                        <img src="./img/mobile-logo.png" alt="boolean logo">
-                    </a>
-                    <a class="desktop_logo col-auto d-none d-lg-flex" href="#">
-                        <img src="./img/logo.svg" alt="boolean logo">
-                    </a>
-                    <div class="search_bar col-auto flex-grow-1">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input class="bar w-100 bg-lightgray" type="text" placeholder="Prova a cercare: Lezioni di Laravel">
+
+        <div id="web-app w-100 vh-100">
+            <header id="nav_header">
+                <nav class="container-fluid">
+                    <div class="row align-items-center gap-2 py-3 fs-4 bg-white">
+                        <div class="logos col-auto">
+                            <a class="mobile_logo d-lg-none" href="#">
+                                <img src="./img/mobile-logo.png" alt="boolean logo">
+                            </a>
+                            <a class="desktop_logo d-none d-lg-flex" href="#">
+                                <img src="./img/logo.svg" alt="boolean logo">
+                            </a>
+                        </div>
+                        <div class="search_bar col-auto flex-grow-1">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="bar w-100 bg-lightgray" type="text" placeholder="Prova a cercare: Lezioni di Laravel">
+                        </div>
+                        <ul class="links_list col-auto d-flex gap-3 m-0">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-list-ul"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-bell c-orange"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="links_list col-auto d-flex gap-3 m-0">
-                        <li>
+                </nav>
+            </header>
+    
+            <main id="page_main">
+                <div class="container-fluid d-flex p-0">
+                    <aside class="sidebar d-flex flex-column align-items-center p-2 c-white">
+                        <ul class="p-1 ">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span class="d-none d-lg-inline">
+                                        Home
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                    <span class="d-none d-lg-inline">
+                                        Stats
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-signal"></i>
+                                    <span class="d-none d-lg-inline">
+                                        Signal
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="admin p-1 mt-auto">
                             <a href="#">
-                                <i class="fa-solid fa-list-ul"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-circle-question"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-bell c-orange"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <main id="page_main">
-
-            <div class="container-fluid d-flex p-0">
-                <aside class="sidebar d-flex flex-column align-items-center p-2 c-white">
-                    <ul class="p-1 ">
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-house"></i>
+                                <i class="fa-solid fa-gear"></i>
                                 <span class="d-none d-lg-inline">
-                                    Home
+                                    Admin
                                 </span>
                             </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-chart-simple"></i>
-                                <span class="d-none d-lg-inline">
-                                    Stats
+                        </div>
+                    </aside>
+    
+                    <div class="main-content flex-grow-1 d-flex flex-column">
+                        <div class="main-content_header d-flex justify-content-between bg-cyan p-2">
+                            <div class="boolean_plans">
+                                <h1 class="d-inline-block m-0">Boolean</h1>
+                                <span class="border-0 rounded-pill p-1 bg-deepblue">
+                                    piano blaze
                                 </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-signal"></i>
-                                <span class="d-none d-lg-inline">
-                                    Signal
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="admin p-1 mt-auto">
-                        <a href="#">
-                            <i class="fa-solid fa-gear"></i>
-                            <span class="d-none d-lg-inline">
-                                Admin
-                            </span>
-                        </a>
-                    </div>
-                </aside>
-
-                <div class="main-content flex-grow-1 d-flex flex-column">
-                    <div class="main-content_header d-flex justify-content-between bg-cyan p-2">
-                        <div class="boolean_plans">
-                            CIAO
-                        </div>
-                        <div class="students">
-                            CIAO
-                        </div>
-                        <div class="add_student">
-                            CIAO
-                        </div>
-                    </div>
-                    <div class="main-content_body d-flex flex-grow-1">
-                        <div class="container-fluid m-0">
-                            <div class="row">
-                                <div class="col-12 col-lg-8">
-                                    CIAO
+                                <div class="other_plans">
+                                    <span class="border-0 rounded-pill p-2 bg-deepblue">
+                                        3 app
+                                    </span>
                                 </div>
-                                <div class="col-12 col-lg-4">
-                                    CIAO
+                            </div>
+                            <div class="students">
+                                CIAO
+                            </div>
+                            <div class="add_student">
+                                CIAO
+                            </div>
+                        </div>
+
+                        <div class="main-content_body d-flex flex-grow-1">
+                            <div class="container-fluid m-0">
+                                <div class="row">
+                                    <div class="col-12 col-lg-8">
+                                        CIAO
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        CIAO
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-        </main>
+    
+            </main>
+        </div>
+        
         
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
