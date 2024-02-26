@@ -30,10 +30,6 @@ img{
 
 /* UTILITIES */
 
-.bg-white{
-    background-color: white;
-}
-
 .bg-lightgray{
     background-color: lightgray;
 }
@@ -53,23 +49,24 @@ img{
 .c-white{
     color: white;
 }
+
+
 /* STRUCTURE */
 
 body{
     font-family: "Raleway", sans-serif;
-    overflow: hidden;
 }
 
-#web-app{
-    height: 100vh;
-}
-
-#nav-header{
-    background-color: rgb(235, 236, 237);
+.nav_header{
+    height: 120px;
 }
 
 .mobile_logo{
     width: 50px;
+}
+
+.page_main{
+    height: calc(100% - 120px);
 }
 
 .links_list > li:not(:last-child){
@@ -105,6 +102,6 @@ body{
     }
 
     .main-content_body{
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 }
