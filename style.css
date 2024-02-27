@@ -30,6 +30,14 @@ img{
 
 /* UTILITIES */
 
+.bg-whitesmoke{
+    background-color: whitesmoke;
+}
+
+.bg-white{
+    background-color: white;
+}
+
 .bg-lightgray{
     background-color: lightgray;
 }
@@ -66,6 +74,25 @@ body{
     width: 50px;
 }
 
+.search_bar{
+    position: relative;
+}
+
+.bar{
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 40px;
+}
+
+.search_bar i{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
 .page_main{
     height: calc(100% - 120px);
 }
@@ -90,10 +117,6 @@ body{
     height: 100%;
 }
 
-.main-content_header{
-    color: white;
-    padding: 15px 15px 50px;
-}
 
 .other_plans button{
     justify-content: center;
@@ -110,7 +133,7 @@ body{
 
 /* MEDIA QUERY */
 
-@media(min-width: 768px){
+@media(min-width: 992px){
     .add_student{
         order: 3;
     }
@@ -118,7 +141,7 @@ body{
 }
 
 
-@media (min-width: 992px){
+@media (min-width: 1200px){
     .nav_header .container-fluid .links_list > li{
         display: flex;
     }
