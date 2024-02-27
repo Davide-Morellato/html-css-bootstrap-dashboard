@@ -153,7 +153,6 @@ body{
     color: white;
 }
 
-
 .table_title .title_name{
     width: 50%;
 }
@@ -171,6 +170,10 @@ body{
 .list-style{
     text-decoration: underline;
     color:rgb(27, 114, 232)
+}
+
+.b-hover:hover{
+    background-color: rgba(173, 216, 230, 0.666);
 }
 
 
