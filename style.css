@@ -79,6 +79,10 @@ body{
     font-family: "Raleway", sans-serif;
 }
 
+.main-content_body{
+    overflow-y: auto;
+}
+
 .nav_header{
     height: 120px;
 }
@@ -191,10 +195,6 @@ body{
 
     .sidebar{
         width: 150px;
-    }
-
-    .main-content_body{
-        overflow-y: auto;
     }
 
     .main-content_header .container-fluid .row{
