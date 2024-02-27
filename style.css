@@ -176,6 +176,9 @@ body{
     background-color: rgba(173, 216, 230, 0.666);
 }
 
+#offcanvasRight{
+    width: 100%;
+}
 
 /* MEDIA QUERY */
 
@@ -187,6 +190,12 @@ body{
     .table_title .title_name{
         width: 30px;
     }
+
+    
+    #offcanvasRight{
+        width: 75%;
+    }
+
 
 }
 
@@ -207,4 +216,11 @@ body{
     .table_title .title_name{
         width: 60%;
     }
+
+        
+    #offcanvasRight{
+        width: 50%;
+    }
+
+
 }
