@@ -20,14 +20,6 @@ img{
 }
 
 
-/* DEBUG */
-
-*{
-    border: 1px dashed black;
-}
-
-
-
 /* UTILITIES */
 
 .bg-whitesmoke{
@@ -50,6 +42,25 @@ img{
     background-color: rgb(22, 91, 186);
 }
 
+.bg-green{
+    background-color: green;
+    width: 50px;
+}
+
+.bg-red{
+    background-color: red;
+    width: 50px;
+}
+
+.bg-gold{
+    background-color: rgb(255, 193, 7);
+    width: 65px;
+}
+
+.w-30{
+    width: 30px;
+}
+
 .c-orange{
     color: rgb(255, 143, 0);
 }
@@ -58,6 +69,9 @@ img{
     color: white;
 }
 
+.t-center{
+    text-align: center;
+}
 
 /* STRUCTURE */
 
@@ -117,7 +131,6 @@ body{
     height: 100%;
 }
 
-
 .other_plans button{
     justify-content: center;
     align-items: center;
@@ -130,12 +143,42 @@ body{
     height: 40px;
 }
 
+.roi_status{
+    padding: 2px;
+    text-align: center;
+    color: white;
+}
+
+
+.table_title .title_name{
+    width: 50%;
+}
+
+.table_icon{
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 30px;
+    display: inline-block;
+    aspect-ratio: 1/1;
+    text-align: center;
+    line-height: 27px;
+}
+
+.list-style{
+    text-decoration: underline;
+    color:rgb(27, 114, 232)
+}
+
 
 /* MEDIA QUERY */
 
 @media(min-width: 992px){
     .add_student{
         order: 3;
+    }
+    
+    .table_title .title_name{
+        width: 30px;
     }
 
 }
@@ -156,5 +199,9 @@ body{
 
     .main-content_header .container-fluid .row{
         justify-content: space-between;
+    }
+ 
+    .table_title .title_name{
+        width: 60%;
     }
 }
