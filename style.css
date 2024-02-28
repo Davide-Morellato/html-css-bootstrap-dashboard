@@ -142,6 +142,10 @@ body{
     width: 30px;
 }
 
+.w-200{
+    width: 200px;
+}
+
 .add_student button{
     width: 40px;
     height: 40px;
