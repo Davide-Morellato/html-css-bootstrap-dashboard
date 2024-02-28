@@ -13,7 +13,7 @@
     </head>
     <body>
 
-        <div id="web-app" class="w-100 vh-100 bg-whitesmoke">
+        <div id="web-app" class="vh-100 bg-whitesmoke">
             <header class="nav_header d-flex align-items-center">
                 <nav class="container-fluid bg-white">
                     <div class="row align-items-center gap-2 py-3 fs-4">
@@ -60,374 +60,376 @@
                 </nav>
             </header>
     
-            <main class="page_main">
-                <div class="main-content d-flex p-0">
-                    <aside class="sidebar d-flex flex-column align-items-center p-2 c-white">
-                        <ul class="p-1 text-center">
-                            <li>
-                                <a href="#" class="fs-5 b-hover p-1">
-                                    <i class="fa-solid fa-house"></i>
-                                    <span class="d-none d-lg-inline ps-2">
-                                        Home
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="fs-5 b-hover p-1">
-                                    <i class="fa-solid fa-chart-simple"></i>
-                                    <span class="d-none d-lg-inline ps-2">
-                                        Stats
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="fs-5 b-hover p-1">
-                                    <i class="fa-solid fa-signal"></i>
-                                    <span class="d-none d-lg-inline ps-2">
-                                        Signal
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="admin p-1 mt-auto">
+            <main class="page_main flex-grow-1 d-flex">
+                <aside class="sidebar d-flex flex-column align-items-center p-2 c-white">
+                    <ul class="p-1 text-center">
+                        <li>
                             <a href="#" class="fs-5 b-hover p-1">
-                                <i class="fa-solid fa-gear"></i>
+                                <i class="fa-solid fa-house"></i>
                                 <span class="d-none d-lg-inline ps-2">
-                                    Admin
+                                    Home
                                 </span>
                             </a>
-                        </div>
-                    </aside>
+                        </li>
+                        <li>
+                            <a href="#" class="fs-5 b-hover p-1">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span class="d-none d-lg-inline ps-2">
+                                    Stats
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="fs-5 b-hover p-1">
+                                <i class="fa-solid fa-signal"></i>
+                                <span class="d-none d-lg-inline ps-2">
+                                    Signal
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="admin p-1 mt-auto">
+                        <a href="#" class="fs-5 b-hover p-1">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="d-none d-lg-inline ps-2">
+                                Admin
+                            </span>
+                        </a>
+                    </div>
+                </aside>
 
-                    <div class="d-flex flex-grow-1 flex-column">
-                        <div class="main-content_header bg-cyan p-3 text-white">
-                            <div class="container-fluid">
-                                <div class="row gap-3">
-                                    <div class="add_student d-flex col-12 col-lg-2">
-                                        <span class="me-3 fs-3">
-                                            Nuovo Studente
-                                        </span>
-                                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"  class="bg-cyan border rounded-1 p-2 b-hover">
-                                            <i class="fa-solid fa-plus c-white"></i>
-                                        </button>
-                                    </div>
-    
-                                    <div class="col-12 col-lg-6">
-                                        <h1 class="d-inline-block m-0 h1">
-                                            Boolean
-                                        </h1>
-                                        <span class="button border-0 rounded-pill p-1 bg-deepblue">
-                                            piano blaze
-                                        </span>
-                                        <ul class="other_plans d-flex align-items-center gap-2 m-0 p-0 pt-2">
-                                            <li>
-                                                <a href="#" class="button border-0 rounded-pill p-1 bg-deepblue">
-                                                    3 app
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <span>
-                                                    <i class="fa-solid fa-angles-right"></i>
-                                                </span>
-                                            </li>
-                                            <li class="d-none d-lg-flex">
-                                                <a href="#" class="button border-0 rounded-pill p-1 bg-deepblue">
-                                                    Boolean mobile app
-                                                </a>
-                                            </li>
-                                            <li class="d-none d-lg-flex">
-                                                <a href="#" class="button border-0 rounded-pill p-1 bg-deepblue">
-                                                    Boolean web app
-                                                </a>
-                                            </li>
-                                            <li class="d-none d-lg-flex">
-                                                <a href="#" class="button border-0 rounded-pill p-1 bg-deepblue">
-                                                    Boolean blog app
-                                                </a>
-                                            </li>
-                                                <button class="d-flex d-lg-none border-0 rounded-circle bg-deepblue b-hover" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fa-solid fa-plus c-white"></i>
-                                                </button>
-                                                <ul class="dropdown-menu w-200">
-                                                    <li><button class="dropdown-item" type="button">Boolean mobile app</button></li>
-                                                    <li><button class="dropdown-item" type="button">Boolean Web app</button></li>
-                                                    <li><button class="dropdown-item" type="button">Boolean blog app</button></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-    
-                                    <div class="col-12 col-lg-2">
-                                        <p class="fs-3">
-                                            Studenti Online negli ultimi 30 minuti
-                                        </p>
-                                        <p class="fs-1">
-                                            125
-                                        </p>
-                                    </div>
+                
+                <div class="main-content flex-grow-1 d-flex flex-column p-0">  
+                    <div class="main-content_header bg-cyan p-3 text-white">
+                        <div class="container-fluid">
+                            <div class="row gap-3">
+                                <div class="add_student d-flex col-12 col-lg-2">
+                                    <span class="me-3 fs-3">
+                                        Nuovo Studente
+                                    </span>
+                                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"  class="bg-cyan border rounded-1 p-2 b-hover">
+                                        <i class="fa-solid fa-plus c-white"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <h1 class="d-inline-block m-0 h1">
+                                        Boolean
+                                    </h1>
+                                    <span class="button border-0 rounded-pill p-1 bg-deepblue">
+                                        piano blaze
+                                    </span>
+                                    <ul class="other_plans d-flex align-items-center gap-2 m-0 p-0 pt-2">
+                                        <li>
+                                            <a href="#" class="button border-0 rounded-pill p-1 bg-deepblue">
+                                                3 app
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fa-solid fa-angles-right"></i>
+                                            </span>
+                                        </li>
+                                        <li class="d-none d-lg-flex">
+                                            <a href="#" class="button border-0 rounded-pill p-1 bg-deepblue">
+                                                Boolean mobile app
+                                            </a>
+                                        </li>
+                                        <li class="d-none d-lg-flex">
+                                            <a href="#" class="button border-0 rounded-pill p-1 bg-deepblue">
+                                                Boolean web app
+                                            </a>
+                                        </li>
+                                        <li class="d-none d-lg-flex">
+                                            <a href="#" class="button border-0 rounded-pill p-1 bg-deepblue">
+                                                Boolean blog app
+                                            </a>
+                                        </li>
+                                            <button class="d-flex d-lg-none border-0 rounded-circle bg-deepblue b-hover" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-plus c-white"></i>
+                                            </button>
+                                            <ul class="dropdown-menu w-200">
+                                                <li><button class="dropdown-item" type="button">Boolean mobile app</button></li>
+                                                <li><button class="dropdown-item" type="button">Boolean Web app</button></li>
+                                                <li><button class="dropdown-item" type="button">Boolean blog app</button></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-12 col-lg-2">
+                                    <p class="fs-3">
+                                        Studenti Online negli ultimi 30 minuti
+                                    </p>
+                                    <p class="fs-1">
+                                        125
+                                    </p>
                                 </div>
                             </div>
                         </div>
-    
-                        <div class="main-content_body">
-                            <div class="container-fluid m-0">
-                                <div class="row">
-                                    <div class="col-12 col-lg-8 p-3">
-                                        <div class="card">
-                                            <div class="card-header">
-                                              <h2>Prossime Classi</h2>
-                                            </div>
-                                            <div class="card-body">
-                                                <table class="table align-middle">
-                                                    <thead>
-                                                      <tr class="table_title">
-                                                        <th scope="col" class="title_name">Nome</th>
-                                                        <th scope="col" class="t-center d-none d-lg-table-cell">Data Inizio</th>
-                                                        <th scope="col" class="d-none d-lg-table-cell">ROI</th>
-                                                        <th scope="col">Stato</th>
-                                                        <th scope="col">Azioni</th>
-                                                      </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                      <tr>
-                                                        <td scope="row">
-                                                            <img class="w-30" src="./img/class-avatar.jpg" alt="">
-                                                            <span>Classe 75</span>
-                                                        </td>
-                                                        <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
-                                                        <td class="d-none d-lg-table-cell">20%</td>
-                                                        <td>
-                                                            <div class="roi_status border rounded-3 bg-green">
-                                                                Done
-                                                            </div>    
-                                                        </td>
-                                                        <td>
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-pencil"></i>
-                                                            </a href="#">
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </a href="#">
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td scope="row">
-                                                            <img class="w-30" src="./img/class-avatar.jpg" alt="">
-                                                            <span>Classe 76</span>
-                                                        </td>
-                                                        <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
-                                                        <td class="d-none d-lg-table-cell">20%</td>
-                                                        <td>
-                                                            <div class="roi_status border rounded-3 bg-green">
-                                                                Done
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-pencil"></i>
-                                                            </a href="#">
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </a href="#">
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td scope="row">
-                                                            <img class="w-30" src="./img/class-avatar.jpg" alt="">
-                                                            <span>Classe 77</span>
-                                                        </td>
-                                                        <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
-                                                        <td class="d-none d-lg-table-cell">20%</td>
-                                                        <td>
-                                                            <div class="roi_status border rounded-3 bg-gold">
-                                                                Process
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-pencil"></i>
-                                                            </a href="#">
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </a href="#">
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td scope="row">
-                                                            <img class="w-30" src="./img/class-avatar.jpg" alt="">
-                                                            <span>Classe 78</span>
-                                                        </td>
-                                                        <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
-                                                        <td class="d-none d-lg-table-cell">20%</td>
-                                                        <td>
-                                                            <div class="roi_status border rounded-3 bg-green">
-                                                                Done
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-pencil"></i>
-                                                            </a href="#">
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </a href="#">
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td scope="row">
-                                                            <img class="w-30" src="./img/class-avatar.jpg" alt="">
-                                                            <span>Classe 79</span>
-                                                        </td>
-                                                        <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
-                                                        <td class="d-none d-lg-table-cell">20%</td>
-                                                        <td>
-                                                            <div class="roi_status border rounded-3 bg-red">
-                                                                failed
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-pencil"></i>
-                                                            </a href="#">
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </a href="#">
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td scope="row">
-                                                            <img class="w-30" src="./img/class-avatar.jpg" alt="">
-                                                            <span>Classe 80</span>
-                                                        </td>
-                                                        <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
-                                                        <td class="d-none d-lg-table-cell">20%</td>
-                                                        <td>
-                                                            <div class="roi_status border rounded-3 bg-green">
-                                                                Done
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-pencil"></i>
-                                                            </a href="#">
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </a href="#">
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td scope="row">
-                                                            <img class="w-30" src="./img/class-avatar.jpg" alt="">
-                                                            <span>Classe 81</span>
-                                                        </td>
-                                                        <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
-                                                        <td class="d-none d-lg-table-cell">20%</td>
-                                                        <td>
-                                                            <div class="roi_status border rounded-3 bg-red">
-                                                                failed
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-pencil"></i>
-                                                            </a href="#">
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </a href="#">
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td scope="row">
-                                                            <img class="w-30" src="./img/class-avatar.jpg" alt="">
-                                                            <span>Classe 82</span>
-                                                        </td>
-                                                        <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
-                                                        <td class="d-none d-lg-table-cell">20%</td>
-                                                        <td>
-                                                            <div class="roi_status border rounded-3 bg-green">
-                                                                Done
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-pencil"></i>
-                                                            </a href="#">
-                                                            <a href="#" class="table_icon">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </a href="#">
-                                                        </td>
-                                                      </tr>
-                                                    </tbody>
-                                                </table>
-                                          </div>
-                                        </div>
+                    </div>
 
-                                        <div class="card mt-4">
-                                            <div class="card-header">
-                                              <h2>F.A.Q.</h2>
+
+                    <div class="main-content_body flex-grow-1">
+                        <div class="container-fluid m-0">
+                            <div class="row">
+                                <div class="col-12 col-lg-8 p-3">
+                                    <div class="card">
+                                        <div class="card-header">
+                                          <h2>Prossime Classi</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <table class="table align-middle">
+                                                <thead>
+                                                  <tr class="table_title">
+                                                    <th scope="col" class="title_name">Nome</th>
+                                                    <th scope="col" class="t-center d-none d-lg-table-cell">Data Inizio</th>
+                                                    <th scope="col" class="d-none d-lg-table-cell">ROI</th>
+                                                    <th scope="col">Stato</th>
+                                                    <th scope="col">Azioni</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td scope="row">
+                                                        <img class="w-30" src="./img/class-avatar.jpg" alt="">
+                                                        <span>Classe 75</span>
+                                                    </td>
+                                                    <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <div class="roi_status border rounded-3 bg-green">
+                                                            Done
+                                                        </div>    
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </a href="#">
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </a href="#">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td scope="row">
+                                                        <img class="w-30" src="./img/class-avatar.jpg" alt="">
+                                                        <span>Classe 76</span>
+                                                    </td>
+                                                    <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <div class="roi_status border rounded-3 bg-green">
+                                                            Done
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </a href="#">
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </a href="#">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td scope="row">
+                                                        <img class="w-30" src="./img/class-avatar.jpg" alt="">
+                                                        <span>Classe 77</span>
+                                                    </td>
+                                                    <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <div class="roi_status border rounded-3 bg-gold">
+                                                            Process
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </a href="#">
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </a href="#">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td scope="row">
+                                                        <img class="w-30" src="./img/class-avatar.jpg" alt="">
+                                                        <span>Classe 78</span>
+                                                    </td>
+                                                    <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <div class="roi_status border rounded-3 bg-green">
+                                                            Done
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </a href="#">
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </a href="#">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td scope="row">
+                                                        <img class="w-30" src="./img/class-avatar.jpg" alt="">
+                                                        <span>Classe 79</span>
+                                                    </td>
+                                                    <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <div class="roi_status border rounded-3 bg-red">
+                                                            failed
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </a href="#">
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </a href="#">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td scope="row">
+                                                        <img class="w-30" src="./img/class-avatar.jpg" alt="">
+                                                        <span>Classe 80</span>
+                                                    </td>
+                                                    <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <div class="roi_status border rounded-3 bg-green">
+                                                            Done
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </a href="#">
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </a href="#">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td scope="row">
+                                                        <img class="w-30" src="./img/class-avatar.jpg" alt="">
+                                                        <span>Classe 81</span>
+                                                    </td>
+                                                    <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <div class="roi_status border rounded-3 bg-red">
+                                                            failed
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </a href="#">
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </a href="#">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td scope="row">
+                                                        <img class="w-30" src="./img/class-avatar.jpg" alt="">
+                                                        <span>Classe 82</span>
+                                                    </td>
+                                                    <td class="t-center d-none d-lg-table-cell">15 febbraio 2021</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <div class="roi_status border rounded-3 bg-green">
+                                                            Done
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </a href="#">
+                                                        <a href="#" class="table_icon">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </a href="#">
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                            </table>
+                                      </div>
+                                    </div>
+
+                                    <div class="card mt-4">
+                                        <div class="card-header">
+                                          <h2>F.A.Q.</h2>
+                                        </div>
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">    
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Come aggiungere uno studente?
+                                                </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                                </div>
                                             </div>
-                                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                                <div class="accordion-item">
-                                                  <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                      Come aggiungere uno studente?
-                                                    </button>
-                                                  </h2>
-                                                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                                  </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                                </h2>
+                                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
                                                 </div>
-                                                <div class="accordion-item">
-                                                  <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                      Come posso accedere alle informazioni del mio account?
-                                                    </button>
-                                                  </h2>
-                                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                                  </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Posso usare questa dashboard da mobile?
+                                                </button>
+                                                </h2>
+                                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                                                 </div>
-                                                <div class="accordion-item">
-                                                  <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                                      Posso usare questa dashboard da mobile?
-                                                    </button>
-                                                  </h2>
-                                                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                                  </div>
-                                                </div>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-lg-4 p-3">
-                                        <div class="card">
-                                            <div class="card-header">
-                                              <h2>Todo</h2>
-                                            </div>
-                                            <div class="p-2">
-                                                <ul class="list-group list-group-flush border rounded-3">
-                                                  <li class="list-group-item">
-                                                    <input type="checkbox" name="Kickoff" id="#">
-                                                    <label for="Kickoff">Kickoff nuove classi</label>
-                                                  </li>
-                                                  <li class="list-group-item">
-                                                    <input type="checkbox" name="Lezione" id="#">
-                                                    <label for="Lezione">Lezione su Bootstrap 5 in classe #75</label>
-                                                  </li>
-                                                  <li class="list-group-item">
-                                                    <input type="checkbox" name="Controllo" id="#">
-                                                    <label for="Controllo">Controllare username github studenti</label>
-                                                  </li>
-                                                </ul>
-                                            </div>
+                                </div>
+                                <div class="col-12 col-lg-4 p-3">
+                                    <div class="card">
+                                        <div class="card-header">
+                                          <h2>Todo</h2>
                                         </div>
+                                        <div class="p-2">
+                                            <ul class="list-group list-group-flush border rounded-3">
+                                              <li class="list-group-item">
+                                                <input type="checkbox" name="Kickoff" id="#">
+                                                <label for="Kickoff">Kickoff nuove classi</label>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <input type="checkbox" name="Lezione" id="#">
+                                                <label for="Lezione">Lezione su Bootstrap 5 in classe #75</label>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <input type="checkbox" name="Controllo" id="#">
+                                                <label for="Controllo">Controllare username github studenti</label>
+                                              </li>
+                                            </ul>
+                                        </div>
+                                    </div>
 
-                                        <div class="card mt-4">
-                                            <img src="./img/stats.jpeg" class="card-img-top" alt="...">
+                                    <div class="card mt-4">
+                                        <div class="px-3">
+                                            <img src="./img/stats.jpeg" class="card-img-top" alt="stats">
                                             <div class="card-body">
-                                              <h5 class="card-title">Utenti Attivi</h5>
-                                              <p class="card-text">Lista degli utenti attivi in piattaforma nellultimo mese</p>
+                                              <h5 class="card-title mb-3">Utenti Attivi</h5>
+                                              <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
                                             </div>
                                             <ul class="list-group list-group-flush">
                                               <li class="list-group-item">Gennaio: 1200</li>
